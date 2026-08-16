@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For You — A Little Gift</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card" id="card">
+    <div class="top">
+      <h1 id="title">To My Love</h1>
+      <div id="typed" class="typed"></div>
+    </div>
+
+    <div class="gallery">
+      <button id="prev" aria-label="Previous">‹</button>
+      <div class="image-wrap" id="imageWrap">
+        <img id="photo" src="https://picsum.photos/id/1015/800/500" alt="memory photo">
+        <div class="caption" id="caption">A special moment...</div>
+      </div>
+      <button id="next" aria-label="Next">›</button>
+    </div>
+
+    <div class="controls">
+      <button id="playAudio">Play Music</button>
+      <button id="download">Download Keepsake</button>
+    </div>
+
+    <audio id="bgAudio" loop crossorigin="anonymous" preload="none">
+      <!-- Optional: replace with your hosted mp3 URL -->
+      <source src="" type="audio/mpeg">
+    </audio>
+
+    <footer>
+      <small>Open this link and enjoy. Made with love.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
