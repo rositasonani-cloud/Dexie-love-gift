@@ -1,0 +1,42 @@
+/* styles.css — styles for the love gift page */
+:root{
+  --bg:#fff8f6;
+  --card:#fff;
+  --accent:#e96f8b;
+  --muted:#666;
+  --radius:18px;
+  --shadow: 0 8px 30px rgba(0,0,0,0.12);
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#fff6f7 0%,#fff 100%);display:flex;align-items:center;justify-content:center}
+.card{
+  width:min(920px,94vw);
+  max-width:920px;
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  align-items:center;
+}
+.top{width:100%;text-align:center}
+#title{font-family: 'Playfair Display', serif;margin:6px 0 6px 0;font-size:28px;color:#222}
+.typed{color:var(--muted);min-height:88px;font-size:18px}
+.linkish{background:none;border:0;color:var(--accent);cursor:pointer;text-decoration:underline}
+.gallery{display:flex;align-items:center;gap:12px;width:100%;}
+.gallery button{background:transparent;border:0;font-size:36px;cursor:pointer;color:var(--accent)}
+.image-wrap{flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;}
+.image-wrap img{width:100%;max-height:520px;object-fit:cover;border-radius:14px}
+.caption{color:var(--muted);font-size:15px}
+.controls{display:flex;gap:12px}
+.controls button{background:var(--accent);color:white;border:0;padding:10px 14px;border-radius:10px;cursor:pointer}
+footer{font-size:12px;color:#999}
+.letter-dialog{max-width:720px;border-radius:12px;padding:18px}
+.letter-content{white-space:pre-wrap;color:#222}
+@media (max-width:720px){
+  .gallery{flex-direction:column}
+  .gallery button{font-size:28px}
+}
